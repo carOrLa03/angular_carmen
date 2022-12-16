@@ -1,7 +1,7 @@
 # Angular_Carmen
 aprendiendo angular
 
-##Estructura de un proyecto con Angular
+## Estructura de un proyecto con Angular
 
 
 [Documentación]: https://angular.io/guide/file-structure
@@ -28,50 +28,43 @@ Directorio donde trabajaremos nuestros módulos. Es el más importante, ya que c
 Dentro de él encontraremos otros directorios y archivos, que explico seguidamente:
 
 
-    - app
+   - app
+Aquí se ubica toda la implementación de los componentes principales, junto a su template HTML y archivos de estilos CSS.
+Es decir, contiene los archivos de componentes en los que se definen la lógica y los datos de su aplicación.
+Archivos que contiene:
+
+    - app.component.html
+    - app.component.sass
+    - ap.component.spec.ts
+    - app.component.ts
+    - app.module.ts
+
+- assets
+
+    Contiene todos los archivos de imagen y otros activos que se copiaran tal cual cuando cree su aplicación.
+
+     - ".gitkeep"
 
 
-    Aquí se ubica toda la implementación de los componentes principales, junto a su template HTML y archivos de estilos CSS.
-    Es decir, contiene los archivos de componentes en los que se definen la lógica y los datos de su aplicación.
-    Archivos que contiene:
-
-
-        - app.component.html
-        - app.component.sass
-        - ap.component.spec.ts
-        - app.component.ts
-        - app.module.ts
-
-
-
-
-    - assets
-
-      Contiene todos los archivos de imagen y otros activos que se copiaran tal cual cuando cree su aplicación.
-
-
-        - ".gitkeep"
-
-
-    - favicon.ico
+- favicon.ico
 
       Archivo del icono del proyecto, en concreto lo veremos en la barra de favoritos.
 
 
-    - index.html
+- index.html
 
       Archivo de la página principal del proyecto. Es la página HTML principal que se sirve cuando alguien visita nuestro sitio.
       La CLI añade automáticamente todos los archivos JS y CSS al crear la aplicación, por lo que no es necesario añadir
       ninguna etiqueta <script> o <link> manualmente.
 
 
-    - main.ts
+- main.ts
 
       Archivo TypeScript inicial del proyecto donde podremos configurar todas la configuraciones globales del proyecto.
       Es el punto de entrada principal para nuestra aplicación. Compila la aplicación con el compilador JIT y arranca el módulo raíz de la aplicación (AppModule) para ejecutarse en el navegador. También puede usar el compilador AOT sin cambiar ningún código añadiendo la bandera --aot a los comandos CLI build y serve.
 
 
-    - styles.sass
+- styles.sass
 
       Lista los archivos CSS que suministran estilos para un proyecto. La extensión refleja el preprocesador de estilos que ha configurado para el proyecto.
 
