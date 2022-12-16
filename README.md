@@ -27,17 +27,30 @@ Carpeta que contiene todas las dependencias de nuestro proyecto. Son visibles pa
 Directorio donde trabajaremos nuestros módulos. Es el más importante, ya que contiene todo el código. 
 Dentro de él encontraremos otros directorios y archivos, que explico seguidamente:
 
-
    - app
-Aquí se ubica toda la implementación de los componentes principales, junto a su template HTML y archivos de estilos CSS.
-Es decir, contiene los archivos de componentes en los que se definen la lógica y los datos de su aplicación.
-Archivos que contiene:
+
+    Aquí se ubica toda la implementación de los componentes principales, junto a su template HTML y archivos de estilos CSS.
+    Es decir, contiene los archivos de componentes en los que se definen la lógica y los datos de su aplicación.
+    Archivos que contiene:
 
     - app.component.html
+
+        Define la plantilla HTML asociada al AppComponent raíz.
+
     - app.component.sass
     - ap.component.spec.ts
+
+        Define una prueba unitaria para el AppComponent raíz.
     - app.component.ts
+
+         Define la lógica del componente raíz de la aplicación, denominado AppComponent. La vista asociada a este componente raíz se convierte en la raíz
+        de la jerarquía de vistas a medida que se añaden componentes y servicios a la app.
+
+        
     - app.module.ts
+
+        Define el módulo raíz, llamado AppModule, que le dice a Angular cómo ensamblar la aplicación. Inicialmente declara sólo el AppComponent.
+        A medida que añades más componentes a la aplicación, deben ser declarados aquí.
 
 - assets
 
@@ -95,6 +108,10 @@ Configura las dependencias de paquetes npm que están disponibles para todos los
 
 
 11. "tsconfig.app.json"
+
+Configuración de TypeScript específica de aplicación, incluidas las opciones del compilador de plantillas de TS y Angular. 
+
+
 12. "tsconfig.json"
 
 Contiene la configuración de TypeScript base para los proyectos en el espacio de trabajo.
@@ -102,6 +119,10 @@ Todos los demás archivos heredan de este archivo base.
 
 
 13. "tsconfig.spec.json"
+
+Configuración de TS para las pruebas de la aplicación.
+
+
 14. "README.md"
 
 Aquí añadimos información sobre la aplicación. Este archivo es leído por GIT y los muestra en el repositorio.
