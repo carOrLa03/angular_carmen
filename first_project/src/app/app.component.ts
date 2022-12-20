@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'first_project';
+  title = 'Contador app';
+  base: number = 5;
+  result: number = 10;
+
+  operar(signo: string) { if (signo == '+') { this.result += this.base } else { this.result -= this.base } }
 }
+
