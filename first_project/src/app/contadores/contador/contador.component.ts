@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
         <label> {{ result }}</label>
         <button (click)="operar('-')"> Restar - 5</button>
     `,
-    styleUrls: ['../app.component.sass']
+    styleUrls: ['../../app.component.sass']
 })
 
 export class ContadorComponent {

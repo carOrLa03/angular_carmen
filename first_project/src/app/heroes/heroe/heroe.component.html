@@ -1,1 +1,17 @@
 <h1>{{title}}</h1>
+<h2>{{nombre}}</h2>
+<dl>
+    <td>Nombre:</td>
+    <dd>{{nombre}}</dd>
+    <td>Edad:</td>
+    <dd>{{edad}}</dd>
+    <td>Función:</td>
+    <dd>{{obtenerNombre()}}</dd>
+    <td>Nombre en mayúsculas:</td>
+    <dd>{{nombreMay}}</dd>
+</dl>
+
+<div>
+    <button type="submit" (click)="cambiaNombre()">Cambia Nombre</button>
+    <button type="submit" (click)="cambiaEdad()">Cambia Edad</button>
+</div>
