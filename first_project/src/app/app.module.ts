@@ -8,6 +8,7 @@ import { ContadorComponent } from './contadores/contador/contador.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { ContadoresModule } from './contadores/contadores.module';
 import { DbzModule } from './dbz/dbz.module';
+import { DbzService } from './dbz/dbz.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { DbzModule } from './dbz/dbz.module';
     ContadoresModule,
     DbzModule
   ],
-  providers: [],
+  providers: [DbzService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
