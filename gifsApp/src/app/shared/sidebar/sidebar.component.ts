@@ -8,11 +8,11 @@ import { GifsService } from '../../gifs/services/gifs.service';
 })
 export class SidebarComponent {
 
-  gifsRecuperados: string[] = []
+ 
   constructor(private gifsService: GifsService) { }
 
-  ngOnInit(){
-    this.gifsRecuperados = this.gifsService.historial
+  get gifsRecuperados() { 
+    return this.gifsService.historial
   }
 
 }
