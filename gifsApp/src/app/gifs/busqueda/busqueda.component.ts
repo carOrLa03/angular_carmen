@@ -8,15 +8,15 @@ import { GifsService } from '../services/gifs.service';
 })
 export class BusquedaComponent {
 
-  @ViewChild('txtBuscar') txtBuscar!:ElementRef<HTMLInputElement>;
+  @ViewChild('txtBuscar') txtBuscar!: ElementRef<HTMLInputElement>;
 
-  constructor(private gifsService: GifsService){}
+  constructor(private gifsService: GifsService) { }
 
-  buscar(){
+  buscar() {
     // console.log(termino)
-
     const valor = this.txtBuscar.nativeElement.value;
-    this.gifsService.buscarGifs(valor)
+
+    this.gifsService.buscarGifs(valor.toLocaleLowerCase())
     this.txtBuscar.nativeElement.value = "";
   }
 }
