@@ -1,0 +1,37 @@
+<app-menu></app-menu>
+<router-outlet></router-outlet>
+
+<p>Con pipe de "uppercase"</p>
+<h1>{{"Hola mundo" | uppercase}}</h1>
+
+<div>
+  <p>Con pipe de "lowercase"</p>
+  <h1>{{"Hola mundo" | lowercase}}</h1>
+</div>
+<div>
+  <p>Con pipe de "titlecase"</p>
+  <h1>{{"Hola mundo" | titlecase}}</h1>
+</div>
+
+<div class="text-layout">
+  <h2>{{nombre | titlecase}}</h2>
+  <h2>{{valor | number}}</h2>
+  <h2>{{obj | json}}</h2>
+  <div>
+    <button class="p-button-help" pButton type="button" (click)="mostrarNombre()" label="Cambiar Nombre"
+      icon="pi pi-megaphone" iconPos="right"></button>
+  </div>
+
+  <p-card header="Simple Card" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+    <ng-template pTemplate="header">
+      <h2>{{nombre | titlecase}}</h2>
+    </ng-template>
+    <h2>{{valor | number}}</h2>
+    <ng-template pTemplate="footer">
+      <p-button label="Save" icon="pi pi-check"></p-button>
+      <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary"
+        [style]="{'margin-left': '.5em'}"></p-button>
+    </ng-template>
+  </p-card>
+
+</div>
