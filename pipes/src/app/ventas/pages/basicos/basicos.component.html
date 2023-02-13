@@ -1,1 +1,50 @@
-<p>basicos works!</p>
+<div class="text-layout">
+    <h1>Pipes Básicos</h1>
+    <p>Pipes incluidos en Angular - Usualmente en el Common Module</p>
+</div>
+
+<div class="grid">
+    <div class="md:col-6 sm:col-9">
+        <p-card header="Uppercase" [subheader]="nombreLower | uppercase"></p-card>
+    </div>
+    <div class="md:col-6 sm:col-9">
+        <p-card header="Lowercase" [subheader]="nombreUpper | lowercase"></p-card>
+    </div>
+    <div class="md:col-6 sm:col-9">
+        <p-card header="Titlecase" [subheader]="nombreCompleto | titlecase"></p-card>
+    </div>
+</div>
+
+<div class="text-layout">
+    <h1>Date - Fecha - Pipe</h1>
+    <p>Pipe para mostrar la fecha</p>
+</div>
+
+<div class="grid">
+    <div class="md:col-6 sm:col-9">
+        <p-card header="Fecha">
+            <ul>
+                <li>fecha</li>
+                <li>fecha | date</li>
+                <li>{{fechaString | date}}</li>
+                <li>{{fecha | date: 'short'}}</li>
+                <li>{{fecha | date: 'medium'}}</li>
+                <li>{{fecha | date: 'full'}}</li>
+
+            </ul>
+        </p-card>
+    </div>
+    <div class="md:col-6 sm:col-9">
+        <p-card header="Fecha de Hoy">
+            <ul>
+                <li>{{fecha}}</li>
+                <li>{{fecha | date}}</li>
+                <li>{{todayISOString | date}}</li>
+                <li>{{fecha | date: 'shortDate'}}</li>
+                <li>{{fecha | date: 'mediumDate'}}</li>
+                <li>{{fecha | date: 'longDate'}}</li>
+                <li>{{fecha | date: 'fullDate'}}</li>
+            </ul>
+        </p-card>
+    </div>
+</div>

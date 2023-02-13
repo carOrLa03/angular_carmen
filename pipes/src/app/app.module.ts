@@ -5,6 +5,7 @@ import { AppRouterModule } from './app-router.module';
 import { AppComponent } from './app.component';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { SharedModule } from './shared/shared.module';
+import { VentasModule } from './ventas/ventas.module';
 
 
 
@@ -17,7 +18,8 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     PrimeNgModule,
     SharedModule,
-    AppRouterModule
+    AppRouterModule,
+    VentasModule
 
   ],
   providers: [],
