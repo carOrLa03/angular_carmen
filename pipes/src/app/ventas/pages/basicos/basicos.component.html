@@ -37,7 +37,7 @@
     <div class="md:col-6 sm:col-9">
         <p-card header="Fecha de Hoy">
             <ul>
-                <li>{{fecha}}</li>
+                <li>{{fecha | date: 'long':'':'fr'}}</li>
                 <li>{{fecha | date}}</li>
                 <li>{{todayISOString | date}}</li>
                 <li>{{fecha | date: 'shortDate'}}</li>

@@ -26,7 +26,7 @@ export class MenuComponent {
           {
             label: 'Números',
             icon: 'pi pi-dollar',
-            routerLink: ''
+            routerLink: 'numeros'
           },
           {
             separator: true
@@ -34,7 +34,7 @@ export class MenuComponent {
           {
             label: 'No comunes',
             icon: 'pi pi-globe',
-            routerLink: ''
+            routerLink: 'no-comunes'
           },
           {
             separator: true
