@@ -46,22 +46,10 @@ export class MenuComponent {
         icon: 'pi pi-cog',
         items: [
           {
-            label: 'Left',
-            icon: 'pi pi-fw pi-align-left'
+            label: 'Mios',
+            icon: 'pi pi-fw pi-align-left',
+            routerLink: 'personalizados'
           },
-          {
-            label: 'Right',
-            icon: 'pi pi-fw pi-align-right'
-          },
-          {
-            label: 'Center',
-            icon: 'pi pi-fw pi-align-center'
-          },
-          {
-            label: 'Justify',
-            icon: 'pi pi-fw pi-align-justify'
-          },
-
         ]
       },
       {

@@ -16,12 +16,14 @@ registerLocaleData(localeFR)
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FieldsetModule, } from 'primeng/fieldset';
+import { CarmenPipe } from './pipes/carmen.pipe';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarmenPipe
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
 import { I18nSelectPipe } from '@angular/common';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -18,6 +19,33 @@ export class NoComunesComponent {
   messageMapping:
     { [k: string]: string } = { '=0': 'no hay clientes', '=1': '1 cliente', 'other': '# clientes.' };
 
+  persona = {
+    nombre: "Carmen",
+    edad: "37",
+    direccion: "Buñol"
+  }
+
+  heroes = [
+    {
+      nombre: "ironman",
+      vuela: true
+    },
+    {
+      nombre: "Gamora",
+      vuela: false
+    },
+    {
+      nombre: "mrs marvel",
+      vuela: true
+    },
+    {
+      nombre: "black Widow",
+      vuela: false
+    },
+  ]
+
+  miObservable = interval(1000);
+
   constructor(private primengConfig: PrimeNGConfig) { }
 
   ngOnInit() {
@@ -32,5 +60,11 @@ export class NoComunesComponent {
   borrarCliente() {
     this.clientes.shift();
   }
+
+valorPromesa = new Promise((res, reject)=>{
+  setTimeout(()=>{
+    res('Tenemos data de promesa')
+  }, 3500)
+})
 
 }
